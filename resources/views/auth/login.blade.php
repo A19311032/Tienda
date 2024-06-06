@@ -58,14 +58,18 @@
                                     Ingresar
                                 </button>
                             </div>
-
-                            <!-- Remember Me -->
-                            <div class="form-group text-center">
+                            <div class="form-group text-center" style="margin-top: 20px">
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}" style="text-decoration: none; color: gray; font-size: 15px">
                                         ¿Olvidaste tu contraseña?
                                     </a>
                                 @endif
+                            </div>
+                            <!-- Registration Button -->
+                            <div class="form-group text-center">
+                                <a class="btn btn-link" href="{{ route('register') }}" style="text-decoration: none; color: gray; font-size: 15px">
+                                    Registrarse
+                                </a>
                             </div>
                         </form>
                     </div>

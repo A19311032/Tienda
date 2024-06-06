@@ -50,7 +50,6 @@
                             <option value="Usado">Usado</option>
                         </select>
                     </div>
-                    <!--push:)-->
                     <div class="col-2" id="condicion-div" style="display: none;">
                         <label for="condicion">Condición:</label>
                         <select name="condicion" class="form-control" id="condicion" style="text-transform: uppercase;">

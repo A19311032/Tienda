@@ -11,12 +11,11 @@ class User extends Authenticatable
 {
     use HasFactory, HasRoles;
 
-    protected $table = 'user';
-
     protected $fillable = [
         'name',
         'apellido_paterno',
         'apellido_materno',
+        'email',
         'password',
         'celular',
         'empresa',

@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\IndexCatalogosController;
@@ -31,7 +32,8 @@ Route::group(['middleware' => ['role:Administrador']], function () {
     Route::get('/ventas/buscar', [VentasController::class, 'buscar'])->name('ventas.buscar');
     Route::delete('/ventas/{id}', [VentasController::class, 'eliminar'])->name('ventas.eliminar');
 
-
+    Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::post('/register', [RegisteredUserController::class, 'store']);
    
 });
 
